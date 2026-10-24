@@ -43,6 +43,7 @@ This lists the repository's skills without installing them.
 | Skill | Description |
 | --- | --- |
 | [commit](skills/commit/SKILL.md) | Prepare commit messages, stage task changes, or create Git commits while preserving unrelated work and following repository conventions. |
+| [fact-check](skills/fact-check/SKILL.md) | Check text for factual accuracy, internal contradictions, and citation support against authoritative sources. Marks unsupported claims as unverified and gives corrected wording with references. |
 | [orca-codex-review](skills/orca-codex-review/SKILL.md) | Get a read-only code review from a Codex worker through Orca orchestration, then verify each finding. Requires [Orca](https://www.onorca.dev/) with orchestration enabled. |
 
 ## Usage
@@ -71,6 +72,8 @@ Each skill lives in its own directory under `skills/`. Its `SKILL.md` contains Y
 ```text
 skills/
 ├── commit/
+│   └── SKILL.md
+├── fact-check/
 │   └── SKILL.md
 └── orca-codex-review/
     └── SKILL.md
