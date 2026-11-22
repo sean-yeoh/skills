@@ -45,6 +45,7 @@ This lists the repository's skills without installing them.
 | [commit](skills/commit/SKILL.md) | Prepare commit messages, stage task changes, or create Git commits while preserving unrelated work and following repository conventions. |
 | [fact-check](skills/fact-check/SKILL.md) | Check text for factual accuracy, internal contradictions, and citation support against authoritative sources. Marks unsupported claims as unverified and gives corrected wording with references. |
 | [orca-codex-review](skills/orca-codex-review/SKILL.md) | Get a read-only code review from a Codex worker through Orca orchestration, then verify each finding. Requires [Orca](https://www.onorca.dev/) with orchestration enabled. |
+| [terms-and-privacy](skills/terms-and-privacy/SKILL.md) | Draft or update Terms of Service and a Privacy Policy. Scans the codebase for real data flows and third-party services, applies EU/UK, US, Australian, and other jurisdiction rules, and marks every assumption and placeholder. Produces drafts for lawyer review, not legal advice. Based on [legal-docs](https://github.com/THHamiltonSmith/legal-docs) and [privacy-data-protection-skills](https://github.com/mukul975/privacy-data-protection-skills). |
 
 ## Usage
 
@@ -75,6 +76,11 @@ skills/
 │   └── SKILL.md
 ├── fact-check/
 │   └── SKILL.md
-└── orca-codex-review/
-    └── SKILL.md
+├── orca-codex-review/
+│   └── SKILL.md
+└── terms-and-privacy/
+    ├── SKILL.md
+    └── references/
 ```
+
+A skill can keep supporting files next to its `SKILL.md`, such as a `references/` directory that the agent reads only when it needs it.
